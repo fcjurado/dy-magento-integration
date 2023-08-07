@@ -624,7 +624,7 @@ class Data extends AbstractHelper implements HelperInterface
 
             $html .= "};</script> \n";
             foreach ($this->getJsIntegration() as $item) {
-                $html .= '<script type="text/javascript" src="' . $item . '"></script>' . "\n";
+                $html .= '<script type="text/javascript" async="true" src="' . $item . '"></script>' . "\n";
             }
 
         }
